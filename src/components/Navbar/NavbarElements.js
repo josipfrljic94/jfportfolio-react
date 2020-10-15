@@ -106,7 +106,8 @@ text-decoration:none;
 
 &:hover{
     transition: all 0.2s ease-in-out;
-    background:#bda020;
-   
+    background:#0a0a10;
+   color:#fafafa;
+   border:1px solid #fafa10;
 }
 `;

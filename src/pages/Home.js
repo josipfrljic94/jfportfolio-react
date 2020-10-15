@@ -1,5 +1,7 @@
 import React,{useState} from 'react';
 import HeroSection from '../components/HeroSection';
+import Info from '../components/Info';
+import { aboutSection, myServices } from '../components/Info/data';
 import Navbar from "../components/Navbar";
 import Sidebar from '../components/SideBar';
 
@@ -14,6 +16,8 @@ export default function Home() {
             <Navbar toggle={toggle}/>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <HeroSection/>
+            <Info {...aboutSection}/>
+            <Info {...myServices}/>
         </div>
     )
 }

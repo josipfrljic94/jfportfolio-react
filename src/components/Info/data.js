@@ -1,0 +1,33 @@
+export const aboutSection={
+    id:"about",
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:true,
+    topLine:"something about me",
+    headLine:"enthusiastic, always eager to progress and learn new things",
+    description:"i am a cheerful person, i play guitar, write plays, train martial arts",
+    buttonLabel:"Contact me",
+    imgStart:false,
+    img: require("../../images/svg1.svg"),
+    alt:"hobys",
+    dark:true,
+    primary:true,
+    darkText:false,
+}
+
+export const myServices={
+    id:"about",
+    lightBg:true,
+    lightText:false,
+    lightTextDesc:false,
+    topLine:"something about me",
+    headLine:"enthusiastic, always eager to progress and learn new things",
+    description:"i am a cheerful person, i play guitar, write plays, train martial arts",
+    buttonLabel:"Contact me",
+    imgStart:true,
+    img: require("../../images/svg1.svg"),
+    alt:"hobys",
+    dark:false,
+    primary:false,
+    darkText:true,
+}
