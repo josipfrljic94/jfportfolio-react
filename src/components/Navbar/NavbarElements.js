@@ -1,16 +1,19 @@
 import styled from "styled-components";
 import {Link as LinkR} from "react-router-dom";
-import {Link as LinkS} from "react-scroll";
+
 export const Nav=styled.nav`
-background:#0a0a10;
-height:15vh;
+background:#010606;
+height:${({scroll})=>(scroll ? "10vh": "12vh")};
 display:flex;
 justify-content:center;
 align-items:center;
 font-size:1rem;
-position:sticky;
-top:0;
-z-index:10;
+width:100%;
+position:${({scroll})=>(scroll ? "fixed": "static")};
+  top: 0;
+transition:all 0.35s ease-in-out;
+z-index:99999;
+border-bottom:${({scroll})=>(scroll ? "none": "0.1px solid #fff")};
 
 @media screen and (max-width:960px){
     transition:0.8s all ease;
@@ -68,7 +71,7 @@ width:400px;
 export const NavItem= styled.li`
 height:15vh;
 `
-export const NavLinks= styled(LinkS)`
+export const NavLinks= styled(LinkR)`
 display:flex;
 color:#fff;
 align-items:center;

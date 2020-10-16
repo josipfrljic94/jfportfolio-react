@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const InfoContainer=styled.div`
+export const SectionContainer=styled.div`
 color:#fff;
 background:${({lightBg})=>(lightBg ? "#fafafa" : "#010606")};
 
@@ -10,7 +10,7 @@ background:${({lightBg})=>(lightBg ? "#fafafa" : "#010606")};
 }
 `
 
-export const InfoWrapper= styled.div`
+export const SectionWrapper= styled.div`
 display:grid;
 z-index:1;
 height:860px;
@@ -21,7 +21,7 @@ margin-left:auto;
 padding:0 24px;
 justify-content:center;
 `
-export const InfoRow= styled.div`
+export const SectionRow= styled.div`
 display:grid;
 grid-auto-columns:minmax(auto,1fr);
 align-items:center;
@@ -69,19 +69,27 @@ color:${({lightText})=>(lightText ? "#fafa10" :"#010606")};
 }
 `
 
-export const Subtitle= styled.p`
+export const Social= styled.div`
 max-width:440px;
 margin-bottom:35px;
 font-size:18px;
 line-height:24px;
+display:flex;
+justify-content:space-around;
 color: ${({darkText})=>( darkText ? "#010606" : "#fafafa" )};
 `
-
-export const BtnWrap= styled.div`
-display:flex;
-justify-content:flex-start;
+export const SocialItem= styled.a`
+font-size:2.5rem;
+color:${({dark})=>(dark ? "#000010" : "#fafafa")};
+text-decoration:none;
+cursor:pointer;
+transition:all 0.15s ease-in-out;
+&:hover{
+    color:#fafa10;
+   transform:scale(1.05);
+    transition:all 0.15s ease-in-out;
+}
 `
-
 export const ImgWrap=styled.div`
 max-width:555px;
 height:100%;

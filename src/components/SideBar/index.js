@@ -10,16 +10,14 @@ const Sidebar = ({isOpen,toggle}) => {
           </Icon>
           <SideBarContent>
               <SideBarMenu>
-              <SideBarLink onClick={()=>{toggle()}} to="/">
+              <SideBarLink  onClick={()=>toggle()} to="/">
                       home
                   </SideBarLink>
-                  <SideBarLink onClick={()=>{toggle()}} to="/about">
-                      about
-                  </SideBarLink>
-                  <SideBarLink onClick={()=>{toggle()}} to="/services">
+                
+                  <SideBarLink  onClick={()=>toggle()} to="/services">
                       services
                   </SideBarLink>
-                  <SideBarLink onClick={()=>{toggle()}} to="/contact">
+                  <SideBarLink  onClick={()=>toggle()}  to="/contact">
                      contact
                   </SideBarLink>
               </SideBarMenu>
