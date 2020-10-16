@@ -11,15 +11,15 @@ const HeroSection = () => {
     return (
         <HeroContainer>
             <HeroBg>
-                <VideoBg autoPlay="false" loop="true" src={video1} type="video/mp4"/>
+                <VideoBg autoPlay={true} loop={true} src={video1} type="video/mp4"/>
             </HeroBg>
             <HeroContent>
-                <HeroH1>HI I'M JOSIP </HeroH1>
+                <HeroH1>hi i'm Josip</HeroH1>
                     <HeroP>
                        FRONT END DEVELOPER
                     </HeroP>
                 <HeroBtnWrapper>
-                    <Button to="Sign up" primary="true" dark="true" onMouseEnter={onHover}  onMouseLeave={onHover}>
+                    <Button to="/" primary="true" dark="true" onMouseEnter={onHover}  onMouseLeave={onHover}>
                         Get started {hover ? <ArrowFoward/> : <ArrowRight/>}
                     </Button>
                 

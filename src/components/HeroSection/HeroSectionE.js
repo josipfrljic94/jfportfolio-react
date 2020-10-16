@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {MdKeyboardArrowRight} from "react-icons/md"
 import {MdArrowForward} from "react-icons/md";
 
+
 export const HeroContainer= styled.div`
 
 height:85vh;
@@ -39,7 +40,7 @@ width:100%;
 height:100%;
 -o-object-fit:cover;
 object-fit:cover;
-background:green;
+
 `
 
 export const HeroContent= styled.div `
@@ -49,45 +50,49 @@ position:absolute;
 
 display:flex;
 flex-direction:column;
-align-items:center;
-justify-content:center;
+ align-items:center; 
+justify-content:center; 
 `
-export const HeroH1=styled.h1` 
-font-family: 'Josefin Sans', sans-serif;
-color:#fff;
-font-size:5rem;
+export const HeroH1=styled.h1 ` 
+text-transform:capitalize;
+color:#ffff10;
+font-weight:800;
+font-size:6rem;
 text-align:center;
-
+padding:0;
+margin:0;
 @media screen and (max-width:980px){
-    font-size:4rem;
+font-size:5rem;
 }
-
 @media screen and (max-width:768px){
-    font-size:3rem;
-}
+ font-size:4rem;}
 
 @media screen and (max-width:480px){
-    font-size:2rem;
-}
+font-size:2.5rem;  }
 `
+
 
 export const HeroP= styled.p `
-color:#fafa10;
-font-size:3.5rem;
-text-align:center;
--webkit-text-stroke-width:2px;
--webkit-text-stroke-color:#0a0a0a;
+color:#d1d1d0;
+font-size:2.5rem;
+font-weight:700;
+text-align:left;
+text-transform:uppercase;
+text-orientation:landspace;
+padding:0;
+margin:0;
+
 @media screen and (max-width:980px){
-    font-size:3rem;
+    font-size:2.5rem;
 }
 @media screen and (max-width:768px){
-    font-size:2rem;
-    -webkit-text-stroke-width:1px;
+    font-size:1.5rem;
+  
 }
 
 @media screen and (max-width:480px){
-    font-size:1.5rem;
-    -webkit-text-stroke-width:0.5px;
+    font-size:1rem;
+  
 }
 `
 export const HeroBtnWrapper = styled.div`

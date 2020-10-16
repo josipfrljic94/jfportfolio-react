@@ -1,6 +1,7 @@
 import React from 'react'
+
 import { Column2 } from './InfoE';
-import {Button} from "../ButtonElement"
+import{ Button} from "../ButtonElement"
 import {InfoContainer,InfoWrapper,InfoRow,Column1,
     TextWrapper,TopLine,Heading,Subtitle,BtnWrap,ImgWrap,Img} from "./InfoE";
 
@@ -22,7 +23,7 @@ const Info = ({lightBg,id,imgStart,lightText,headLine,
                            {description}
                         </Subtitle>
                         <BtnWrap>
-                        <Button primary={primary} dark={dark} to="contact">{buttonLabel}</Button>
+                        <Button primary={primary} dark={dark} to="/contact">{buttonLabel}</Button>
                         </BtnWrap>
                     </TextWrapper>
                   </Column1>

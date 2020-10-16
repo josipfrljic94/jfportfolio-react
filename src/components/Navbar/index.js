@@ -2,20 +2,28 @@ import React from 'react';
 import { RiMenu5Fill } from 'react-icons/ri';
 import {Nav,NavbarContainer,NavLogo,
 MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink} from "./NavbarElements";
+import { IoLogoSlack } from "react-icons/io";
 
-const Navbar = ({toggle}) => {
+const Navbar = ({toggle,scroll}) => {
     return (
         <div>
-            <Nav>
+            <Nav scroll={scroll}>
                 <NavbarContainer>
-                    <NavLogo to="/">NJonjo</NavLogo>
-                    <MobileIcon>
-                       <RiMenu5Fill onClick={()=>toggle()}/>
+                    <NavLogo to="/"><IoLogoSlack/></NavLogo>
+                    <MobileIcon onClick={()=>toggle()}>
+                       <RiMenu5Fill />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="/about">
-                                About
+                            <NavLinks to="/">
+                               Home
+                            </NavLinks>
+                        
+                        </NavItem>
+                       
+                        <NavItem>
+                            <NavLinks  onClick={()=>toggle()} to="/services">
+                                Services
                             </NavLinks>
                         
                         </NavItem>
@@ -24,16 +32,10 @@ const Navbar = ({toggle}) => {
                                 Contact
                             </NavLinks>
                         </NavItem>
-                        <NavItem>
-                            <NavLinks to="/about">
-                                Services
-                            </NavLinks>
-                        
-                        </NavItem>
                       
                     </NavMenu>
                     <NavBtn>
-                           <NavBtnLink>
+                           <NavBtnLink to="/contact">
                                Sign-up
                            </NavBtnLink>
                        </NavBtn>
