@@ -22,7 +22,7 @@ const Navbar = ({toggle,scroll}) => {
                         </NavItem>
                        
                         <NavItem>
-                            <NavLinks  onClick={()=>toggle()} to="/services">
+                            <NavLinks   to="/services">
                                 Services
                             </NavLinks>
                         
