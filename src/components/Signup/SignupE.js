@@ -53,7 +53,7 @@ height:40px;
 export const SignInput= styled.input`
 border:none;
 width:100%;
-height:40px;
+height:38px;
 border-radius:9px;
 &:hover{
     border:1px solid blue;
