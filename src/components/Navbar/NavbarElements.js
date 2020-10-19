@@ -9,10 +9,13 @@ justify-content:center;
 align-items:center;
 font-size:1rem;
 width:100%;
-position:${({scroll})=>(scroll ? "fixed": "static")};
+position:${({scroll})=>(scroll ? "fixed": "sticky")};
+
+left:0;
+right:0;
   top: 0;
 transition:all 0.35s ease-in-out;
-z-index:99999;
+z-index:9;
 border-bottom:${({scroll})=>(scroll ? "none": "0.1px solid #fff")};
 
 @media screen and (max-width:960px){
