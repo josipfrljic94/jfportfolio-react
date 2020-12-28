@@ -16,7 +16,8 @@ z-index:1;
     content:"";
     position:absolute;
     background:#000;
-    opacity:70%;
+
+    opacity:80%;
     width:100%;
     height:100%;
     top:0;
@@ -35,9 +36,11 @@ overflow:hidden;
 
 `
 
-export const VideoBg= styled.video `
-width:100%;
+export const VideoBg= styled.img `
+width:60%;
 height:100%;
+/* margin-left:20%; */
+object-position:top;
 -o-object-fit:cover;
 object-fit:cover;
 
@@ -61,14 +64,20 @@ font-size:6rem;
 text-align:center;
 padding:0;
 margin:0;
+margin-left:20%;
 @media screen and (max-width:980px){
 font-size:5rem;
+margin-left:0;
 }
 @media screen and (max-width:768px){
- font-size:4rem;}
+ font-size:4rem;
+ margin-left:0;
+ }
 
 @media screen and (max-width:480px){
-font-size:2.5rem;  }
+font-size:2.5rem; 
+margin-left:0;
+ }
 `
 
 
@@ -81,18 +90,20 @@ text-transform:uppercase;
 text-orientation:landspace;
 padding:0;
 margin:0;
+margin-left:20%;
 
 @media screen and (max-width:980px){
     font-size:2.5rem;
+    margin-left:0%;
 }
 @media screen and (max-width:768px){
     font-size:1.5rem;
-  
+    margin-left:0%;
 }
 
 @media screen and (max-width:480px){
     font-size:1rem;
-  
+    margin-left:0%;
 }
 `
 export const HeroBtnWrapper = styled.div`
@@ -100,6 +111,12 @@ margin-top:30px;
 display:flex;
 flex-direction:column;
 align-items:center;
+margin-left:20%;
+
+@media screen and (max-width:980px){
+
+    margin-left:0;
+}
 `
 export const ArrowFoward= styled(MdArrowForward)`
 margin-left:8px;

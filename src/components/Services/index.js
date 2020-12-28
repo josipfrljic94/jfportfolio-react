@@ -23,7 +23,7 @@ const Services = () => {
               <ServiceCard>
                     <ServiceImg src={backend}/>
                     <ServiceH2>Back end</ServiceH2>
-                    <ServiceP>Making simple server side jobs</ServiceP>
+                    <ServiceP>Making backend structure</ServiceP>
               </ServiceCard>
           </ServicesWrapper>
       </ServicesContainer>
