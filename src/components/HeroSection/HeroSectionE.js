@@ -15,9 +15,9 @@ z-index:1;
 &:after{
     content:"";
     position:absolute;
-    background:#000;
+    background:#0a0a0a;
 
-    opacity:80%;
+    opacity:50%;
     width:100%;
     height:100%;
     top:0;

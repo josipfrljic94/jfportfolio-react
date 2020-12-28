@@ -25,6 +25,8 @@ const Services = () => {
                     <ServiceH2>Back end</ServiceH2>
                     <ServiceP>Making backend structure</ServiceP>
               </ServiceCard>
+
+            
           </ServicesWrapper>
       </ServicesContainer>
     )

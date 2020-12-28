@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
-import video1 from "../../videos/video1.mp4"
-import slika1 from "../../images/slikaportfolio.png";
+
+import slika1 from "../../images/slika1.png";
 import {HeroContainer,HeroBg,VideoBg,HeroContent,HeroH1,HeroP, ArrowFoward, ArrowRight,HeroBtnWrapper} from "./HeroSectionE";
 import{ Button} from "../ButtonElement"
 
@@ -20,8 +20,8 @@ const HeroSection = () => {
                        FRONT END DEVELOPER
                     </HeroP>
                 <HeroBtnWrapper>
-                    <Button to="/" primary="true" dark="true" onMouseEnter={onHover}  onMouseLeave={onHover}>
-                        Get started {hover ? <ArrowFoward/> : <ArrowRight/>}
+                    <Button to="/services" primary="true" dark="true" onMouseEnter={onHover}   onMouseLeave={onHover}>
+                     My services {hover ? <ArrowFoward/> : <ArrowRight/>}
                     </Button>
                 
                 </HeroBtnWrapper>

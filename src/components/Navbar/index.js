@@ -2,14 +2,14 @@ import React from 'react';
 import { RiMenu5Fill } from 'react-icons/ri';
 import {Nav,NavbarContainer,NavLogo,
 MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink} from "./NavbarElements";
-import { IoLogoSlack } from "react-icons/io";
+// import { IoLogoSlack } from "react-icons/io";
 
 const Navbar = ({toggle,scroll}) => {
     return (
         <div>
             <Nav scroll={scroll}>
                 <NavbarContainer>
-                    <NavLogo to="/"><IoLogoSlack/></NavLogo>
+                    <NavLogo to="/">JF</NavLogo>
                     <MobileIcon onClick={()=>toggle()}>
                        <RiMenu5Fill />
                     </MobileIcon>

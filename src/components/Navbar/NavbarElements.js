@@ -42,6 +42,7 @@ align-items:center;
 margin-left:24px;
 font-weight:bold;
 text-decoration:none; 
+font-family: 'Audiowide', cursive;
 `;
 
 export const MobileIcon=styled.div`
@@ -49,10 +50,11 @@ display:none;
 
 @media screen and (max-width:768px){
     display:block;
-   
+   position:absolute;
     top:0%;
     right:0%;
     transform:translate(-100%,35%);
+    z-index:150000;
     font-size:1.8rem;
     cursor:pointer;
     color:#fff;
